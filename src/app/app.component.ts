@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import isSW from 'is-sw';
+import { NgLoadingSkeletonModule } from 'ng-loading-skeleton';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgLoadingSkeletonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
